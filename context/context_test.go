@@ -14,6 +14,7 @@ type SpyStore struct {
 }
 
 func (s *SpyStore) Fetch() string {
+	time.Sleep(100 * time.Millisecond)
 	return s.response
 }
 
